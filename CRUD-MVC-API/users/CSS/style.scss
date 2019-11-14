@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(20, 20, 20);
+
+    .container{
+        width: auto;
+        max-width: 1000px;
+        margin: auto;
+        background-color: rgb(22, 22, 22);
+        border: 1px solid rgb(223, 223, 223);
+        border-radius: 10px;
+        padding: 8px;
+        h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(221, 221, 221);
+            margin: 27px;
+        }
+        ul{
+            display: grid;
+            // grid-template-columns: 32% auto 32%;
+            grid-template-columns: 1fr 1fr 1fr ;
+
+            grid-gap: 42px;
+            .user{
+                font-family: 'Courier New', Courier, monospace;
+                color: rgb(219, 219, 219);
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                span{
+                    margin-left: 2px;
+                }
+                a{
+                    color: rgb(219, 219, 219);
+                    &:hover{
+                        color: snow;
+                    }
+                }
+            }
+            li{
+                padding: 4px;
+            }
+        }
+        .thisuser{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: snow;
+            font-size: 16px;
+
+        }
+        @media only screen and (max-width: 768px) {
+            ul{
+                grid-template-columns: auto auto;
+            }
+        }
+        @media only screen and (max-width: 570px) {
+            ul{
+                grid-template-columns: auto;
+            }
+        }
+        .link{
+            padding: 20px;
+            text-align: center;
+            a{
+                border: rgb(219, 219, 219) 1px solid;
+                border-radius: 5px;
+                padding: 10px;
+                text-decoration: none;
+                color: rgb(218, 218, 218);
+                font-family: Arial, Helvetica, sans-serif;
+                &:hover{
+                    color: rgb(175, 175, 175);
+                }
+            }
+                button{
+                    cursor: pointer;
+                    width: 118px;
+                    height: 39px;
+                    background-color: rgb(22, 22, 22);
+                    border: rgb(219, 219, 219) 1px solid;
+                    border-radius: 5px;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: rgb(218, 218, 218);
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    &:hover{
+                        color: rgb(175, 175, 175);
+                }
+            }
+        }
+        form{
+            color: rgb(219, 219, 219);
+            font-family: 'Courier New', Courier, monospace;
+            width: auto;
+            max-width: 500px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 49% auto;
+            grid-gap: 10px;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: rgb(70, 70, 70);
+                background-color: white;
+                height: 20px;
+                border: 1px solid rgba(128, 128, 128, 0.5);
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                line-height: 19px;
+                &:hover{
+                    color: black;
+                }
+                &:active{
+                    -moz-box-shadow:    inset 0 0 4px #000000;
+                    -webkit-box-shadow: inset 0 0 4px #000000;
+                    box-shadow:         inset 0 0 4px #000000;
+                }
+            }
+            .btn{
+                display: block;
+                margin: 16px 0;
+                width: 100%;
+                height: 20px;
+                color: rgb(70, 70, 70);
+
+                border: 1px solid rgba(128, 128, 128, 0.5);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                cursor: pointer;
+                &:hover{
+                    color: black;
+                }
+                &:active{
+                    -moz-box-shadow:    inset 0 0 4px #000000;
+                    -webkit-box-shadow: inset 0 0 4px #000000;
+                    box-shadow:         inset 0 0 4px #000000;
+                }
+            }
+        }
+    }
+
+    }

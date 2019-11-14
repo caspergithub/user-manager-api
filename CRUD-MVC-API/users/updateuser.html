@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit user</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Edit user <span id="thisuser"></span></h1>
+
+        <form name="submituser" onsubmit="updateUser()">
+            <p>id</p><input type="text" name="id" id="useridvalue" value="">
+            <p>First name</p><input type="text" name="username" value="">
+            <p>Email</p><input type="text" name="email" value="">
+            <P>Password</P><input type="text" name="password" value="">
+            <input class="btn" type="submit" value="Submit">
+            <a href="index.html">Cancel</a>
+        </form>
+
+        <hr>
+
+        <div class="link">
+            <a href="index.html">Back to users</a>
+        </div>
+
+    </div>
+
+    <script src="JS/updateuser.js"></script>
+
+</body>
+
+</html>

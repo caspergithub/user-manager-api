@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create new user</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Create new user</h1>
+
+        <form name="submituser" onsubmit="createUser()">
+            <p>First name</p><input type="text" name="username" value="">
+            <p>Email</p><input type="text" name="email" value="">
+            <P>Password</P><input type="text" name="password" value="">
+            <input class="btn" type="submit" value="Submit">
+            <a href="index.html">Cancel</a>
+        </form>
+
+        <hr>
+
+        <div class="link">
+            <a href="index.html">Back to users</a>
+        </div>
+
+    </div>
+
+
+    <script src="JS/createuser.js"></script>
+
+</body>
+
+</html>
